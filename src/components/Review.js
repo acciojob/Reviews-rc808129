@@ -8,7 +8,7 @@ const Review = ()=>{
   const [index, setIndex] = useState(0);
 
   // 2️⃣ current review nikalo
-  const { name, job, image, text } = reviews[index];
+  const {id, name, job, image, text } = reviews[index];
 
   // 3️⃣ next button
   const nextReview = () => {
@@ -43,7 +43,7 @@ const styles = { height: "100px", width: "100px" };
   return (
     <div className="review">
       <img src={image}  style={styles} className="person-img" />
-     <h4 id={`author-${index}`} className="author">
+     <h4 id={`author-${id}`} className="author">
   {name}
 </h4>
 
