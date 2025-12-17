@@ -43,7 +43,11 @@ const styles = { height: "100px", width: "100px" };
   return (
     <div className="review">
       <img src={image}  style={styles} className="person-img" />
-      <h4 className="author">{name}</h4>
+     <h4 id={`author-${index}`} className="author">
+  {name}
+</h4>
+
+
       <p className="job">{job}</p>
       <p className="info">{text}</p>
 
